@@ -36,6 +36,20 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .list {
   list-style: none;
 }
@@ -200,12 +214,9 @@ body {
 .feature-list {
   display: flex;
   text-decoration: none;
-  margin-bottom: 94px;
 }
-.feature-item {
-  margin-top: 0;
-}
-.feature-item:not(:last-child) {
+
+.feature-list > li:not(:last-child) {
   margin-right: 30px;
 }
 .feature-list .title {
@@ -246,6 +257,9 @@ body {
 }
 
 /* Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
 .team-header {
   padding: 0;
   margin: 0 0 50px;
@@ -271,7 +285,7 @@ body {
 }
 .team-card {
   padding: 0;
-  margin: 0 0 30px;
+  margin: 0;
 }
 .name {
   font-weight: 500;
@@ -292,6 +306,15 @@ body {
   padding: 0;
   margin: 0;
 }
+.team-box {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--hero-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 /* Портфолио */
 
 .portfolio-title {
@@ -302,7 +325,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 0 auto 34px;
+  margin: 0;
 }
 .portfolio-list {
   display: flex;
@@ -329,7 +352,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
 }
 .portfolio-description {
   font-size: 16px;
@@ -341,6 +365,11 @@ body {
 }
 .portfolio {
   text-decoration: none;
+}
+.port-box {
+  padding: 20px 24px;
+  background: var(--hero-color);
+  border: 1px solid #eeeeee;
 }
 /*.portfolio-item:not(:last-child) {
   margin-right: 30px;
