@@ -20,7 +20,6 @@
   /* Цвета для подвала */
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --footer-bg: #2f303a;
-  --one-item: 4;
 }
 html {
   box-sizing: border-box;
@@ -311,12 +310,18 @@ body {
   margin-left: -30px;
   margin-top: -30px;
 }
-.portfolio-item {
-  flex-basis: calc(100% / 3 - 30px);
+.portfolio-list > li {
+  flex-basis: calc((100% - (30px * 3)) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  /*border-bottom: 1px solid #eeeeee;*/
+}
+/*.portfolio-item {
+  flex-basis: calc((100% - (30px * 3)) / 3);
   margin-left: 30px;
   margin-top: 30px;
   border: 1px solid #eeeeee;
-}
+}*/
 
 .portfolio-header {
   font-weight: 700;
@@ -337,9 +342,9 @@ body {
 .portfolio {
   text-decoration: none;
 }
-.portfolio-item:not(:last-child) {
+/*.portfolio-item:not(:last-child) {
   margin-right: 30px;
-}
+}*/
 /* Подвал */
 .footer {
   background-color: var(--footer-bg);
@@ -352,8 +357,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--button-letters-active);
-  /*background-color: gray;
-  временный фон для контраста */
 }
 .footer-contact {
   text-decoration: none;
@@ -362,6 +365,4 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
-  /*background-color: gray;
-   временный фон для контраста */
 }
