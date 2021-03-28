@@ -324,6 +324,7 @@ p {
   margin: 0 0 34px;
 }
 .portfolio-list {
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -359,6 +360,7 @@ p {
   padding: 20px 24px;
   background: var(--hero-color);
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 /* Подвал */
