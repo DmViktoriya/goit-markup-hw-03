@@ -6,7 +6,7 @@
   /* Цвет акцента */
   --accent-color: #2196f3;
   /* Цвет фона */
-  --primary-bg-color: #e5e5e5;
+  --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   /* Цвет логотипа */
   --logo-color: #000000;
@@ -83,6 +83,7 @@ p {
 .site-nav {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .site-nav .list {
@@ -200,11 +201,6 @@ p {
   color: var(--hero-color);
   margin: 0 auto 30px;
 }
-/* Секции */
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 /* Особенности */
 .feature-title {
@@ -258,7 +254,7 @@ p {
 
 /* Наша команда */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bg-color);
 }
 .team-header {
   padding: 0;
@@ -325,7 +321,7 @@ p {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 0 0 34px;
 }
 .portfolio-list {
   display: flex;
@@ -337,14 +333,7 @@ p {
   flex-basis: calc((100% - (30px * 3)) / 3);
   margin-left: 30px;
   margin-top: 30px;
-  /*border-bottom: 1px solid #eeeeee;*/
 }
-/*.portfolio-item {
-  flex-basis: calc((100% - (30px * 3)) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
-  border: 1px solid #eeeeee;
-}*/
 
 .portfolio-header {
   font-weight: 700;
@@ -371,9 +360,7 @@ p {
   background: var(--hero-color);
   border: 1px solid #eeeeee;
 }
-/*.portfolio-item:not(:last-child) {
-  margin-right: 30px;
-}*/
+
 /* Подвал */
 .footer {
   background-color: var(--footer-bg);
