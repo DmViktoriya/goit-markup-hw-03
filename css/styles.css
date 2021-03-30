@@ -80,7 +80,21 @@ p {
   text-decoration: none;
 }
 .logo-web {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hero-color);
+  text-decoration: none;
 }
 /* Меню */
 .header-nav,
@@ -187,13 +201,11 @@ p {
 /* Герой */
 .hero {
   text-align: center;
-  margin-bottom: 76px;
 }
 .hero-container {
   background-color: var(--footer-bg);
   padding-top: 200px;
   padding-bottom: 200px;
-  margin: 0 0 94px;
 }
 .hero-title {
   max-width: 696px;
@@ -245,7 +257,8 @@ p {
 }
 .skills-header {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -326,7 +339,7 @@ p {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 0 0 34px;
+  margin: 0 0 50px;
 }
 .portfolio-list {
   padding-left: 0;
@@ -375,6 +388,8 @@ p {
   padding-bottom: 60px;
 }
 .footer-address {
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -388,4 +403,7 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
+}
+.footer-contact:first-child {
+  margin-bottom: 9px;
 }
